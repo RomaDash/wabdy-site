@@ -73,6 +73,42 @@ nav {
   gap: 16px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.language-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.language-picker select {
+  min-height: 40px;
+  max-width: 190px;
+  padding: 7px 34px 7px 13px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background-color: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.language-picker select:hover,
+.language-picker select:focus-visible {
+  border-color: rgba(35, 139, 255, 0.55);
+}
+
 nav a {
   color: var(--muted);
   font-size: 0.94rem;
@@ -87,6 +123,10 @@ nav a:focus-visible {
 
 main {
   padding: 28px 0 72px;
+}
+
+main:focus {
+  outline: none;
 }
 
 .hero {
@@ -227,8 +267,24 @@ footer {
     flex-direction: column;
   }
 
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
   nav {
     justify-content: flex-start;
+  }
+
+  .language-picker {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .language-picker select {
+    flex: 1;
   }
 
   .hero {

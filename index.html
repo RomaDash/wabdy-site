@@ -7,17 +7,31 @@
   <title>Wabdy — Photo Curator</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body data-page="home">
   <div class="shell">
     <header>
       <a class="brand" href="./">Wabdy</a>
-      <nav aria-label="Primary navigation">
-        <a href="./privacy/">Privacy · Конфиденциальность</a>
-        <a href="./support/">Support · Поддержка</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Primary navigation">
+          <a data-nav="privacy" href="./privacy/">Privacy</a>
+          <a data-nav="support" href="./support/">Support</a>
+        </nav>
+        <label class="language-picker">
+          <span data-language-label>Language</span>
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+      </div>
     </header>
 
-    <main>
+    <main id="page-content" tabindex="-1">
       <section class="hero">
         <p class="eyebrow">Wabdy — Photo Curator</p>
         <h1>Your photo library stays yours.</h1>
@@ -36,14 +50,6 @@
           <h2>Support</h2>
           <p>Contact information and answers to common questions.</p>
         </a>
-        <a class="card" href="./privacy/#ru">
-          <h2>Конфиденциальность</h2>
-          <p>Как Wabdy работает с доступом к Фото, локальной обработкой и передачей данных.</p>
-        </a>
-        <a class="card" href="./support/#ru">
-          <h2>Поддержка</h2>
-          <p>Контактная информация и ответы на частые вопросы.</p>
-        </a>
       </section>
     </main>
 
@@ -51,5 +57,7 @@
       © 2026 Roman Danilin · Wabdy
     </footer>
   </div>
+  <script src="./translations.js"></script>
+  <script src="./site.js"></script>
 </body>
 </html>

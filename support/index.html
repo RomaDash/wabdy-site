@@ -7,17 +7,31 @@
   <title>Support — Wabdy</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body data-page="support">
   <div class="shell">
     <header>
       <a class="brand" href="../">Wabdy</a>
-      <nav aria-label="Primary navigation">
-        <a href="../privacy/">Privacy · Конфиденциальность</a>
-        <a href="./">Support · Поддержка</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Primary navigation">
+          <a data-nav="privacy" href="../privacy/">Privacy</a>
+          <a data-nav="support" href="./">Support</a>
+        </nav>
+        <label class="language-picker">
+          <span data-language-label>Language</span>
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+      </div>
     </header>
 
-    <main>
+    <main id="page-content" tabindex="-1">
       <article class="document">
         <p class="eyebrow">Wabdy — Photo Curator</p>
         <h1>Support</h1>
@@ -112,5 +126,7 @@
       © 2026 Roman Danilin · Wabdy
     </footer>
   </div>
+  <script src="../translations.js"></script>
+  <script src="../site.js"></script>
 </body>
 </html>
