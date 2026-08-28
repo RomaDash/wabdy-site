@@ -22,7 +22,7 @@
         <p class="eyebrow">Wabdy — Photo Curator</p>
         <h1>Privacy Policy</h1>
         <div class="meta">
-          <strong>Effective date:</strong> July 23, 2026<br>
+          <strong>Effective date:</strong> August 28, 2026<br>
           <strong>Operator:</strong> Roman Danilin<br>
           <strong>Privacy contact:</strong>
           <a href="mailto:inner-norms8f@icloud.com">inner-norms8f@icloud.com</a>
@@ -93,18 +93,7 @@
             workflow, the pending Trash review queue, undo, and safe removal of
             album memberships that Wabdy previously created;
           </li>
-          <li>
-            an optional action report, only after action recording is enabled in Settings.
-          </li>
         </ul>
-        <p>
-          The optional action report can contain event times, actions, counts,
-          filter and date-range values, shortened local Photos identifiers,
-          album-title length, and technical error descriptions. It does not record
-          the album title itself. It is disabled by default in Release builds, is
-          limited in size, and remains in the application sandbox until the user
-          clears it or removes the app.
-        </p>
         <p>
           Wabdy reads available device capacity while the app is active so it can
           show a low-storage warning. The value is not sent to the developer.
@@ -116,45 +105,77 @@
           those backups.
         </p>
 
-        <h2>5. Notifications and Live Activities</h2>
+        <h2>5. Notifications</h2>
         <p>
           Sorting reminders are optional local notifications. If enabled, iOS
-          stores a generic localized title and message without photo counts,
-          photo identifiers, or an analytics payload. Wabdy does not use a
-          notification server.
-        </p>
-        <p>
-          Live Activities show local progress for an operation started by the
-          user. Their state contains an operation type, a random batch identifier,
-          counts or progress, and locale. The current version does not use remote
-          Live Activity push updates.
+          stores and delivers them on the device. Depending on the reminder selected
+          by the user, a notification can contain the user’s on-device sorting goal,
+          the number remaining to that goal, or a sorting-streak count. It does not
+          contain Photos identifiers, file names, photo or video content, or an
+          analytics payload. Wabdy does not use a notification server, remote push
+          notifications, or Live Activities in the current release.
         </p>
 
         <h2>6. Sharing and platform services</h2>
         <p>
           Wabdy uses Apple platform services such as Photos and iCloud Photos,
-          Vision, ActivityKit, UserNotifications, and the iOS share sheet. Apple’s
+          Vision, UserNotifications, and the iOS share sheet. Apple’s
           handling of its services is governed by Apple’s terms and privacy policy.
         </p>
         <p>
-          Media or an action report leaves the Wabdy sandbox only after the user
-          opens the system share sheet and chooses a destination. The selected
-          application or recipient processes that material under its own privacy
-          practices. Temporary export files are removed by Wabdy after the sharing
-          flow when possible and are also subject to iOS temporary-file management.
+          Media leaves the Wabdy sandbox only after the user opens the system share
+          sheet and chooses a destination. The selected application or recipient
+          processes that material under its own privacy practices. Temporary export
+          files are removed by Wabdy after the sharing flow when possible and are
+          also subject to iOS temporary-file management.
         </p>
         <p>
           Wabdy does not send personal data to developer-selected third-party
           partners. A destination selected by the user in the system share sheet
           is the user’s choice, not a recipient selected by Wabdy or its operator.
         </p>
+        <h3>6.1 Support correspondence</h3>
         <p>
-          If a person voluntarily contacts support, the operator receives the
-          information included in that message and any attachment the person
-          chooses to send. It will be used only to answer the request, investigate
-          the reported problem, and meet legal obligations, and will be retained
-          only as long as reasonably necessary for those purposes. A deletion
-          request may be sent to the privacy contact above.
+          If a person voluntarily contacts support, the data controller named at
+          the top of this policy receives the information included in that message.
+          This can include the sender’s name and email address, message text,
+          app/iOS/device details, and any attachment the sender chooses to provide.
+          Users should not send private photos or other sensitive material unless
+          it is necessary and they have reviewed its contents.
+        </p>
+        <p>
+          Support correspondence is processed to answer the request, troubleshoot
+          or secure Wabdy, prevent abuse, and comply with applicable legal
+          obligations. Where the GDPR applies, the legal bases are the controller’s
+          legitimate interests in providing support and maintaining the security
+          and reliability of Wabdy, consent where it is specifically requested for
+          optional material, and compliance with a legal obligation where
+          applicable. The controller does not use support messages for advertising
+          or unrelated profiling.
+        </p>
+        <p>
+          Support email is handled using Apple’s iCloud Mail infrastructure. The
+          sender’s email provider and Apple may process routing and account data
+          under their own terms and privacy notices, potentially outside the
+          sender’s country. The controller does not sell support data and does not
+          disclose it to another recipient unless needed to operate the email
+          service, investigate the request, comply with law, or protect legal
+          rights. Correspondence is kept only while it is reasonably necessary for
+          those purposes; this is assessed from whether the request remains active
+          and whether a legal, security, or dispute-related need requires continued
+          retention.
+        </p>
+
+        <h3>6.2 Public privacy and support pages</h3>
+        <p>
+          Wabdy’s public privacy and support pages are hosted on GitHub Pages. When
+          a person visits those pages, GitHub may automatically process technical
+          website data such as an IP address, browser or device information,
+          service usage, page views, and cookies according to the
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.
+          Those hosting logs are not photo-library data transmitted by the Wabdy
+          app, and the Wabdy operator does not receive a copy of the user’s photo
+          library through GitHub Pages.
         </p>
 
         <h2>7. Data sale, advertising, and tracking</h2>
@@ -172,9 +193,8 @@
         <h2>8. Retention and user controls</h2>
         <p>
           The user can change or withdraw Photos and notification permissions in
-          iOS Settings. Wabdy Settings provide controls for the action report,
-          reminders, and local progress. Clearing the action report and resetting
-          sorting progress are separate actions.
+          iOS Settings. Wabdy Settings provide controls for reminders and local
+          progress. Resetting sorting progress is a separate action.
         </p>
         <p>
           Deleting Wabdy removes its application sandbox subject to normal iOS
@@ -182,6 +202,18 @@
           Apple Photos. Albums, favorite or hidden state, iCloud synchronization,
           and items in Recently Deleted are managed by Apple Photos and can remain
           after the app is removed.
+        </p>
+        <p>
+          For support correspondence, a person may contact the privacy address to
+          request access, correction, deletion, restriction, or portability of
+          their personal data, or to object to processing, where the applicable law
+          provides that right. Where processing is based on consent, consent may be
+          withdrawn without affecting processing that was lawful before withdrawal.
+          A person may also complain to the data-protection authority competent for
+          their place of residence or the relevant processing. Identity may need to
+          be verified before a request is fulfilled. Wabdy does not use personal
+          data for automated decisions that produce legal or similarly significant
+          effects.
         </p>
 
         <h2>9. Children and family use</h2>
@@ -221,7 +253,7 @@
           <p class="eyebrow">Wabdy — Photo Curator</p>
           <h1>Политика конфиденциальности</h1>
           <div class="meta">
-            <strong>Дата вступления в силу:</strong> 23 июля 2026 года<br>
+            <strong>Дата вступления в силу:</strong> 28 августа 2026 года<br>
             <strong>Оператор:</strong> Roman Danilin<br>
             <strong>Контакт по вопросам приватности:</strong>
             <a href="mailto:inner-norms8f@icloud.com">inner-norms8f@icloud.com</a>
@@ -293,18 +325,7 @@
               фото», очереди проверки Корзины, отмены и безопасного удаления только
               тех связей с альбомом, которые ранее создал Wabdy;
             </li>
-            <li>
-              необязательный отчёт действий — только после включения записи в Настройках.
-            </li>
           </ul>
-          <p>
-            Отчёт действий может содержать время событий, действия, количества,
-            значения фильтров и диапазона дат, сокращённые локальные идентификаторы
-            Photos, длину названия альбома и описания технических ошибок. Само
-            название альбома не записывается. В Release-сборке отчёт по умолчанию
-            выключен, ограничен по размеру и остаётся в sandbox приложения, пока
-            пользователь его не очистит или не удалит приложение.
-          </p>
           <p>
             Пока приложение активно, Wabdy также читает объём свободного места в
             хранилище устройства, чтобы показать предупреждение о его нехватке.
@@ -316,30 +337,28 @@
             как исключённые из backup. Wabdy не управляет этими копиями и не получает их.
           </p>
 
-          <h2>5. Уведомления и Live Activities</h2>
+          <h2>5. Уведомления</h2>
           <p>
             Напоминания о сортировке — необязательные локальные уведомления. После
-            включения iOS хранит общий локализованный заголовок и текст без
-            количества фото, идентификаторов Photos и аналитического payload.
-            Сервер уведомлений Wabdy не используется.
-          </p>
-          <p>
-            Live Activities показывают локальный прогресс операции, запущенной
-            пользователем. Их состояние содержит тип операции, случайный ID партии,
-            количества или прогресс и локаль. Текущая версия не использует
-            удалённые push-обновления Live Activity.
+            включения iOS хранит и доставляет их на устройстве. В зависимости от
+            выбранного пользователем напоминания уведомление может содержать заданную
+            на устройстве цель сортировки, количество фото до цели или длину серии
+            дней сортировки. Оно не содержит идентификаторы Photos, имена файлов,
+            содержимое фото или видео и аналитический payload. Wabdy не использует
+            сервер уведомлений, удалённые push-уведомления или Live Activities в
+            текущем релизе.
           </p>
 
           <h2>6. Передача по выбору пользователя и системные сервисы</h2>
           <p>
             Wabdy использует платформенные сервисы Apple: Photos и iCloud Photos,
-            Vision, ActivityKit, UserNotifications и системное меню «Поделиться».
+            Vision, UserNotifications и системное меню «Поделиться».
             Обработка данных этими сервисами Apple регулируется условиями и
             политикой конфиденциальности Apple.
           </p>
           <p>
-            Медиафайл или отчёт действий покидает sandbox Wabdy только после того,
-            как пользователь открыл системное меню «Поделиться» и выбрал получателя.
+            Медиафайл покидает sandbox Wabdy только после того, как пользователь
+            открыл системное меню «Поделиться» и выбрал получателя.
             Выбранное приложение или получатель обрабатывает материал по собственным
             правилам. Wabdy удаляет временные экспортные файлы после завершения
             передачи, когда это возможно; ими также управляет механизм временных
@@ -350,12 +369,47 @@
             разработчиком. Приложение или получатель в системном меню «Поделиться»
             выбирается самим пользователем, а не Wabdy или его оператором.
           </p>
+          <h3>6.1 Переписка с поддержкой</h3>
           <p>
-            Если пользователь добровольно обращается в поддержку, оператор получает
-            текст сообщения и вложения, которые пользователь решил отправить. Они
-            используются только для ответа, разбора заявленной проблемы и выполнения
-            юридических обязанностей и хранятся не дольше, чем разумно необходимо
-            для этих целей. Запрос на удаление можно отправить на контактный адрес выше.
+            Если пользователь добровольно обращается в поддержку, указанный в начале
+            политики контролёр получает данные из сообщения. Это может быть имя и
+            адрес отправителя, текст сообщения, сведения о версии приложения, iOS и
+            устройстве, а также вложения, которые отправитель решил предоставить.
+            Не следует отправлять личные фото и другие чувствительные материалы,
+            если это не требуется и их содержимое не было проверено.
+          </p>
+          <p>
+            Переписка обрабатывается, чтобы ответить на запрос, устранить неполадку
+            или защитить Wabdy, предотвращать злоупотребления и выполнять применимые
+            юридические обязанности. Когда применяется GDPR, правовыми основаниями
+            являются законный интерес контролёра в предоставлении поддержки и
+            обеспечении безопасности и надёжности Wabdy, согласие — когда оно
+            отдельно запрашивается для необязательных материалов, — и выполнение
+            юридической обязанности в применимых случаях. Сообщения поддержки не
+            используются для рекламы или не связанного с запросом профилирования.
+          </p>
+          <p>
+            Почта поддержки работает через инфраструктуру Apple iCloud Mail. Почтовый
+            провайдер отправителя и Apple могут обрабатывать маршрутные и учётные
+            данные по собственным условиям и политикам, в том числе за пределами
+            страны отправителя. Контролёр не продаёт данные поддержки и не передаёт
+            их другому получателю, кроме случаев, когда это необходимо для работы
+            почты, разбора запроса, соблюдения закона или защиты законных прав.
+            Переписка хранится только пока это разумно необходимо для этих целей;
+            учитывается, остаётся ли запрос активным и требуется ли хранение из-за
+            юридической обязанности, безопасности или спора.
+          </p>
+
+          <h3>6.2 Публичные страницы приватности и поддержки</h3>
+          <p>
+            Публичные страницы приватности и поддержки Wabdy размещены на GitHub
+            Pages. При посещении GitHub может автоматически обрабатывать технические
+            данные сайта, включая IP-адрес, сведения о браузере или устройстве,
+            использование сервиса, просмотры страниц и cookies, согласно
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">общей политике конфиденциальности GitHub</a>.
+            Эти логи хостинга не являются данными медиатеки, переданными приложением
+            Wabdy; оператор Wabdy не получает через GitHub Pages копию медиатеки
+            пользователя.
           </p>
 
           <h2>7. Продажа данных, реклама и отслеживание</h2>
@@ -373,9 +427,9 @@
           <h2>8. Срок хранения и управление</h2>
           <p>
             Пользователь может изменить или отозвать разрешения на Фото и уведомления
-            в Настройках iOS. В настройках Wabdy есть отдельные элементы управления
-            отчётом действий, напоминаниями и локальным прогрессом. Очистка отчёта
-            и сброс прогресса — разные действия.
+            в Настройках iOS. В настройках Wabdy есть элементы управления
+            напоминаниями и локальным прогрессом. Сброс прогресса сортировки —
+            отдельное действие.
           </p>
           <p>
             Удаление Wabdy удаляет sandbox приложения в рамках обычной работы iOS,
@@ -383,6 +437,18 @@
             Альбомы, состояния «Избранное» или «Скрыто», синхронизация iCloud и
             объекты в «Недавно удалённых» управляются Apple Photos и могут
             сохраниться после удаления приложения.
+          </p>
+          <p>
+            По данным переписки с поддержкой человек может написать на адрес по
+            вопросам приватности и запросить доступ, исправление, удаление,
+            ограничение или перенос своих персональных данных либо возразить против
+            обработки, когда применимый закон предоставляет такое право. Если
+            обработка основана на согласии, его можно отозвать без влияния на
+            законность обработки до отзыва. Также можно обратиться в орган по защите
+            данных, компетентный по месту жительства или соответствующей обработке.
+            Перед выполнением запроса может потребоваться подтверждение личности.
+            Wabdy не использует персональные данные для автоматизированных решений,
+            создающих юридические или сходные существенные последствия.
           </p>
 
           <h2>9. Дети и семейное использование</h2>
